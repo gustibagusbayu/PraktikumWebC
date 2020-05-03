@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <style>
+        body {
+            background-image: url("view.jpg");
+            margin: 0;
+            padding: 0;
+            font-family: Poppins;
+        }
+        h1 {
+            font-family: Poppins;
+            color: rgba(255,255,255,1);
+            font-style: bold;
+            font-size: 38px;
+            text-align: center;
+        }
+        h2 {
+            font-family: Poppins;
+            color: rgba(255,255,255,1);
+            font-style: bold;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 1px;
+        }
+        a {
+            font-family: Poppins;
+            font-size: 20px;
+            color: rgba(255,255,255,1);
+        }
+        .header {
+            height:50px;
+            background-color:bisque;
+            padding-top:10px;
+            padding-right: 20px;
+            text-align: right;
+        }
+        .isi {
+            height:552px;
+        }
+        .formbox {
+            width:50%;
+            padding:20px;
+            margin-left:310px;
+            border-radius: 20px;
+            background-color:blanchedalmond;
+        }
+        #box {
+            opacity: 1;
+            color: rgba(255,255,255,1);
+            padding: 8px;
+            margin: 8px;
+        }
+        .box::-webkit-input-placeholder{
+            text-align: center;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            color: rgba(2,2,2,1);
+            letter-spacing: 0.35px;
+        }
+        .box {
+            width: 63%;
+            height: 10px;
+            border:0px;
+            border-radius: 9px;
+            text-align: center;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            color: rgba(2,2,2,1);
+            background-color: rgba(255,255,255,1);
+            padding: 8px;
+        }
+
+        #kecil {
+            opacity: 1;
+            color: rgba(255,255,255,1);
+            padding: 8px;
+            margin: 8px;
+        }
+        .kecil::-webkit-input-placeholder{
+            white-space: nowrap;
+            text-align: center;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            color: rgba(2,2,2,1);
+            letter-spacing: 0.35px;
+        }
+        .kecil {
+            width: 20%;
+            height: 10px;
+            border:0px;
+            border-radius: 9px;
+            text-align: center;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            color: rgba(2,2,2,1);
+            background-color: rgba(255,255,255,1);
+            padding: 8px;
+        }
+        .btn {
+            margin-top: 5px;
+            width: 10%;
+            height:30px;
+            text-align: center;
+            font-size: 14px;
+            font-family: 'Open Sans',sans-serif;
+            font-weight: bold;
+            letter-spacing: 0;
+            -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+            -moz-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+            box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+            color: #fff;
+            background-color: #f2672e;
+            text-shadow: none;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            -webkit-animation: shadowFadeOut 0.4s;
+            -moz-animation: shadowFadeOut 0.4s;
+            border-radius: 9px;
+        }
+        .btn:hover,.btn:focus{
+            color: #fff;
+        -webkit-box-shadow: inset 0px 54px 0px 0px rgba(204,86,15,1);
+        -moz-box-shadow:    inset 0px 54px 0px 0px rgba(204,86,15,1);
+        box-shadow:         inset 0px 54px 0px 0px rgba(204,86,15,1);
+        -webkit-animation: shadowFade 0.4s;
+        -moz-animation: shadowFade 0.4s;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            cursor: pointer;
+            position: relative;
+            padding: 12px 8px 12px 40px;
+            list-style-type: none;
+            background: #eee;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+        ul li:nth-child(odd){
+            background: #f9f9f9;
+        }
+        ul li:hover{
+            background: #ddd;
+        }
+        ul li.checked{
+            background: #f2672e;
+            color: #fff;
+            text-decoration: line-through;
+        }
+        ul li.checked::before{
+            content: '';
+            position: absolute;
+            border-color: #fff;
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            top: 10px;
+            left: 16px;
+            transform: rotate(45deg);
+            height: 15px;
+            width: 7px;
+        }
+        .close{
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 12px 16px 12px 16px;
+        }
+        .close:hover{
+            background-color: #000000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+	<div class="isi">
+	<h1>TO DO LIST</h1>
+	<div class="formbox">
+        <form action="">
+        <input class="kecil" type="time" id="waktu" placeholder="waktu..." required/>
+        <input class="box" type="text" id="masuk" placeholder="Masukkan List..." required/>
+        <input class="btn" onclick="newElement()"  value="submit"><br><br>
+        </form>
+        <ul id="ul_list">
+        <li>11:00 Tidur</li>
+        <li>06:02 Mandi</li>
+        <li>08:16 Makan</li>
+  </ul>
+    </div>
+    </div>
+    <script>
+        var myNodelist = document.getElementsByTagName("LI");
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            myNodelist[i].appendChild(span);
+        }   
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+        }
+
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+            if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+        }
+        }, false);
+
+        function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("waktu").value;
+        var inputValue1 = document.getElementById("masuk").value;
+        var t = document.createTextNode(inputValue);
+        var t1 = document.createTextNode(inputValue1);
+        li.appendChild(t);
+        li.appendChild(t1);
+        if (inputValue === '' && inputValue1 === '') {
+            alert("Inputan tidak boleh kosong... ");
+        } else {
+            document.getElementById("ul_list").appendChild(li);
+        }
+        document.getElementById("waktu").value = " ";
+        document.getElementById("masuk").value = "";
+
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+            }
+        }
+    }
+    </script>
+</body>
+</html>

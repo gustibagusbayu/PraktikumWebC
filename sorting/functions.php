@@ -77,7 +77,7 @@ function cari($keyword){
 	nama LIKE '%$keyword%' OR
 	nim LIKE '%$keyword%' OR
 	email LIKE '%$keyword%' OR
-	tempat LIKE '%$keyword%' OR
+	alamat LIKE '%$keyword%' OR
 	fakultas LIKE '%$keyword%'
 	ORDER BY nim";
 	return query($query);

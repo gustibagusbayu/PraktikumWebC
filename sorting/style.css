@@ -1,0 +1,120 @@
+.table1 {
+    border-collapse: collapse;
+    width: 20%;
+    border: 1px solid #f2f5f7;
+    padding: 20;
+    spacing: 10;
+}
+
+.table1 tr th{
+    background: #254380;
+    color: #fff;
+    font-weight: normal;
+}
+
+.table1, th, td {
+    padding: 0px 40px;
+    text-align: left;
+}
+
+.table1 tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table1 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.gambar {
+    width: 50;
+}
+
+.form{
+	padding-top: 20px;
+}
+
+
+.tabel h1{
+	color: #fff;
+	font-size: 200%;
+	margin-left: 100px;
+}
+
+
+
+.form h2{
+	font-family: 'quicksand';
+	color: #000;
+	font-size: 100%;
+	text-shadow: 0 0 300px #000;
+	padding: 10px 0 10px 0;
+	font-weight: normal;
+}
+
+.form input{
+	height: 30px;
+	width: 100%;
+	color: #000;
+	border: 1px solid;
+	padding: 0 20px 0 20px;
+	font-size: 100%;
+}
+
+.form select{
+	height: 30px;
+	width: 200px;
+	color: #000;
+	border: 1px solid;
+	padding: 0 20px 0 20px;
+	font-size: 100%;
+}
+
+.form .btn{
+	height: 40px;
+	width: 150px;
+	color: #ffff;
+	background-color: #254380;
+	border-radius: 20px;
+	border: 0px solid;
+	padding: 0 20px 0 20px;
+	font-size: 120%;
+	cursor: pointer;
+	margin-top: 20px;
+
+}
+.btn1{
+	height: 30px;
+	width: 2430x;
+	color: #ffff;
+	background-color: #178317;
+	border-radius: 20px;
+	border: 0px solid;
+	padding: 0 20px 0 20px;
+}
+
+
+.form .btn:active{
+	transform: translateY(1px);
+}
+
+
+.search {
+    padding:7px 15px;
+    background:#fafafa;
+	border:1px solid #178317;
+}
+.button {
+    padding:7px 15px;
+    left:-8px;
+    border:2px solid #178317;
+    background-color:#178317;
+	color:#fafafa;
+	font-family: 'quicksand';
+}
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
+
+
+

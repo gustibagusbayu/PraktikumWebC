@@ -22,7 +22,7 @@ $type = $_SESSION["role"];
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body <?= ($type == 'admin') ? "style='background-color: seashell'" : "style='background-color: whitesmoke'"; ?>>
     <div class="kiri">
         <section class="logo">
             <img class="unud" src="gambar/logo.png" alt="unud" height="150px" />
@@ -89,7 +89,7 @@ $type = $_SESSION["role"];
             <p>Kapolda Bali Irjen Pol. Petrus R. Golose bersama jajaran bertemu Rektor Unud Prof. A.A Raka Sudewi di
                 Gedung Rektorat Kampus Jimbaran, Senin (30/3/2020). Turut hadir mendampingi Rektor, Wakil Rektor Bidang
                 Perencanaan Kerja Sama dan Informasi, Dekan FMIPA dan Wakil Dekan serta Koorprodi Farmasi. Pertemuan ini
-                dalam...</p>
+                dalam...</p>    
             <a target="_blank"
                 href="https://www.unud.ac.id/in/berita3307-Polda-Bali-Kolaborasi-dengan-Universitas-Udayana-Ciptakan-Rasa-Aman-dan-Nyaman-Bagi-Masyarakat-di-Tengah-Pandemi-COVID-19.html">Baca
                 Selengkapnya</a>

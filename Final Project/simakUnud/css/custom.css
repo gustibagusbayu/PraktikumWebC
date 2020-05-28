@@ -1,0 +1,222 @@
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand, 
+.nav-link {
+  color: white !important;
+  text-shadow: 1px 1px 1px rgba(0 , 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+
+.navbar-brand {
+  font-family: 'viga'; 
+  font-size: 24px;
+}
+
+.nav-link:hover{
+  border-bottom: 3px solid  #008cc1;
+  margin-bottom: -3px;
+}
+
+
+.btn-primary {
+  background: #008cc1;
+  border: 0px;
+  padding: 10px 30px 10px 30px;
+  text-shadow: 1px 1px 1px rgba(0 , 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: #047eaa;
+  border: 0px;
+}
+
+.btn-secondary {
+  background: none;
+  color: white!important;
+  border: 1px solid #FFF;
+  text-shadow: 1px 1px 1px rgba(0 , 0, 0, 0.5);
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #173a56;
+}
+
+
+.btn-secondary:hover {
+  background: none;
+  border: 1px solid #047eaa;
+  color: #173a56;
+}
+
+.jumbotron {
+  background-image: url('../gambar/jumbotron.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+  margin-top: -90px;
+  position: relative;
+
+}
+
+.jumbotron::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, rgb(0,0,0,0.8), rgba(0,0,0,0));
+  bottom: 0 ;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 150px;
+  text-shadow: 1px 1px 1px rgba(0 , 0, 0, 0.5);
+  font-size: 52px;
+}
+
+.content {
+  padding: 20px 80px;
+  text-align: justify;
+}
+
+
+.card{
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.content p {
+  font-size: 20px;
+}
+
+.content h1 {
+  font-size: 40px;
+  color: black;
+  padding-bottom: 60px;
+}
+
+.content h2 {
+  font-size: 30px;
+  color: black;
+}
+.content h4 {
+  font-size: 25px;
+  color: black;
+}
+
+.footer{
+  margin-top: 200px;
+  bottom: 0;
+}
+
+
+
+.col label {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #2f281e;
+}
+
+.registerbtn {
+  background: #008cc1;
+  border: 0px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card{
+  padding-top: 20px;
+  margin-top: 120px;
+  width: 500px;
+  height: 400px;
+}
+
+#cardRegis{
+  padding-top: 20px;
+  margin-top: 10px;
+  width: 500px;
+  height: 700px;
+}
+
+#cardRegis1{
+  padding-top: 20px;
+  margin-top: 10px;
+  width: 500px;
+  height: 690px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .btn-primary,
+  .btn-secondary, 
+  .card {
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+
+  .btn-secondary{
+    color: black !important;
+    text-shadow: none;
+    border: 1px solid #008cc1 !important;
+  }
+
+  .navbar-brand{
+    color: #2f281e !important;
+    font-size: 16px;
+    text-shadow: none !important;
+  }
+
+  .nav-link{
+    color: black !important;
+    text-transform: capitalize !important;
+    text-shadow: none !important;
+  }
+  
+  .jumbotron {
+    height: 440px;
+    margin-top: 0px;
+  }
+
+  .jumbotron ,.display-4{
+    font-size: 40px !important;
+    text-shadow: 1px 1px 1px rgba(0 , 0, 0, 0.5) !important;
+  }
+
+  .footer{
+    margin-top: 600px;
+    bottom: 0;
+  }
+
+}
